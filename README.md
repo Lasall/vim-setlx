@@ -6,6 +6,8 @@ This is a [Vim][vim] plugin that provides file detection, snippet support ([Snip
 
 [SetlXHelper][setlxhelper] and the gtksourceview language definition in the [setlX repository][setlxrepo] were used as a reference for highlights an snippets.
 
+![xoria256 color theme](https://i.imgur.com/7GmbzU1.png)
+
 
 ## Installation
 
