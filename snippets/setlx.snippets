@@ -1,0 +1,75 @@
+snippet cachedProcedure
+	cachedProcedure(${1:arguments}) {
+		${2:body}
+	};
+snippet case
+	case ${1:pattern}: ${2:body};
+snippet catch
+	try {
+		${1:body}
+	} catch${2:} (${3:e}) {
+		${4:handler}
+	}
+snippet closure
+	closure(${1:arguments}) {
+		${2:body}
+	};
+snippet default
+	default: ${1:body};
+snippet elif
+	else if(${1:test}) {
+		${2:body}
+	}
+snippet else
+	else {
+		${1:body}
+	}
+snippet for
+	for(${1:i} in ${2:m}) {
+		${3:body}
+	}
+snippet if
+	if(${1:test}) {
+		${2:body}
+	}
+snippet list
+	[ ${1:definition} : ${2:ranges} | ${3:condition} ]
+snippet match
+	match(${1:term}) {
+		${0:}
+	}
+snippet fproc
+	${0:name} := procedure(${1:arguments}) {
+		${2:body}
+	};
+snippet proc
+	procedure(${1:arguments}) {
+		${2:body}
+	};
+snippet procedure
+	procedure(${1:arguments}) {
+		${2:body}
+	};
+snippet set
+	{ ${1:definition} : ${2:ranges} | ${3:condition} }
+snippet switch
+	switch {
+		${0:}
+	}
+snippet trace
+	trace(true);
+	${1:expressions}
+	trace(false);
+	${0:}
+snippet while
+	while(${1:test}) {
+		${2:body}
+	}
+snippet print
+	print("${0:}");
+snippet p
+	print(${0:});
+snippet do
+	do {
+		${2:body}
+	} while (${1:test});

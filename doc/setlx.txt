@@ -1,0 +1,127 @@
+*setlx.txt*                                         Comforting the few
+*setlx*
+
+
+
+                                  __  ___  __
+                       ________  / /_/ / |/ /
+                      / ___/ _ \/ __/ /|   /
+                     (__  )  __/ /_/ //   |
+                    /____/\___/\__/_//_/|_|
+
+        Computers make very fast, very accurate mistakes.
+
+
+
+                        Reference manual~
+
+
+
+==============================================================================
+CONTENTS                                                      *setlx-contents*
+
+        1. Description..................|setlx-description|
+
+        2. Installation.................|setlx-installation|
+
+        3. Configuration................|setlx-configuration|
+
+        4. Troubleshooting..............|setlx-troublshooting|
+
+        5. Credits......................|setlx-credits|
+
+        6. License......................|setlx-license|
+
+
+==============================================================================
+1. Description                                             *setlx-description*
+
+vim-setlx provides file detection, snippet support and syntax highlighting for
+the setlX programming language. Snippet support is optional and requires a
+compatible snippet manager like SnipMate to work.
+
+Both .stlx and .setlx file types are recognized as setlX and activate the
+features. Syntax highlighting is done in a naive way speeding up the
+highlighting process significantly and keeping the syntax definition simple.
+However any common code should be displayed just fine.
+
+Folds are automatically created around blocks with curly brackets. Therefore
+*foldmethod* set to 'syntax' is recommended.
+
+
+==============================================================================
+2. Installation                                           *setlx-installation*
+
+Simply put the syntax/setlx.vim and ftdetect/setlx.vim into your vim
+installation and you are good to go. Or just use the plugin manager of your
+choice.
+
+
+To install the setlX interpreter go to
+
+    https://randoom.org/Software/SetlX
+
+and follow the installation steps on that page. A Java runtime (version 7 or
+higher is required).
+
+
+==============================================================================
+3. Configuration                                         *setlx-configuration*
+
+It is possible to disable special highlighting of unnamed operators like
+>
+    =   -   +=   /   <==>   :=
+
+    etc.
+<
+                                                   *g:setlx_no_highlight_ops*
+g:setlx_no_highlight_ops~
+Default: 0
+
+Set this option to "1" in your vimrc to disable this feature:
+>
+    let g:setlx_no_highlight_ops = 1
+<
+
+==============================================================================
+4. Troubleshooting                                      *setlx-troublshooting*
+
+If you encounter any issues with invalid snippets or problems with the syntax
+highlighting please report back at the github project page
+
+    https://github.com/Lasall/vim-setlx/issues
+
+
+==============================================================================
+5. Credits                                                     *setlx-credits*
+
+Snippets are based on the SetlXHelper project (highlighting and snippets for
+Sublime and Visual Studio Code):
+
+    https://github.com/LucaVazz/SetlXHelper
+
+
+Syntax highlighting is based on the gtksourcecode language definition in the
+setlX source code:
+
+    https://github.com/herrmanntom/setlX
+
+
+==============================================================================
+6. License                                                     *setlx-license*
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+ vim:tw=78:ts=4:ft=help:norl:
